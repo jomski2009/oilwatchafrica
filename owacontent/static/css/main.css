@@ -4,7 +4,11 @@
     min-height: 100px;
 }
 
-.logo{
+p {
+    text-align: justify;
+}
+
+.logo {
     background-image: url("../images/owalogo.png");
     width: 200px;
     height: 100px;
@@ -13,11 +17,11 @@
 
 }
 
-.owa-nav{
+.owa-nav {
     margin-top: 30px;
 }
 
-#content-wrapper{
+#content-wrapper {
     margin-top: 60px;
 }
 
@@ -29,6 +33,55 @@ footer {
     padding: 15px 0 30px;
 }
 
-footer a{
+footer a {
     color: #FFFFFF;
+}
+
+.myway p {
+    color: #f89406;
+}
+
+#myCarousel {
+    border: #607e5a solid 1px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+}
+
+.carousel-caption {
+    width: 100%;
+    left: 0;
+    bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+.carousel-indicators {
+    bottom: 10px;
+}
+
+.featured-image {
+    max-width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+
+.content-card-container {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.content-newsletter, .content-article, .content-pressrelease {
+    clear: both;
+}
+
+.read-more {
+    text-align: right;
 }

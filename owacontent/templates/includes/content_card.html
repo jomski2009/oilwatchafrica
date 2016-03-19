@@ -1,0 +1,11 @@
+<div class="content-card-container">
+    <div class="content-{{ item.content_type }}">
+        <h4>{{ item.title }}</h4>
+        {% if item.featured_image %}
+            <p><img class="img-responsive featured-image" src="{{ MEDIA_URL }}{{ item.featured_image }}"></p>
+        {% endif %}
+        <p>{{ item.description }}</p>
+    <p class="read-more"><a href ="{% url "content_detail" item.slug %}">Read more</a> </p>
+    </div>
+<div class="clearfix"></div>
+</div>

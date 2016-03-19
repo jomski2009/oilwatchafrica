@@ -9,12 +9,15 @@
         </div>
     {% endif %}
     <div class="content row">
-        <section class="main col col-lg-9">
-            {% include "includes/carousel.html" %}
-            {% include "includes/lorem.html" %}
+        <section class="main col col-lg-8">
+            {% if featured_content %}
+                {% include "includes/carousel.html" %}
+            {% endif %}
+            {% include "content/content_home_listing.html" %}
         </section>
-        <section class="sidebar col col-lg-3">
-            {% include "includes/lorem.html" %}
+        <section class="sidebar col col-lg-4">
+            {% include "widgets/newsletters.html" %}
+            {% include "widgets/twitter.html" %}
         </section>
 
     </div>

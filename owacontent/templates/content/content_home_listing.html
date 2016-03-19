@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="content-grid-display col col-lg-8">
+            {% if home_content_list %}
+                    {% for item in home_content_list %}
+                        {% include "includes/content_card.html" %}
+                    {% endfor %}
+            {% endif %}
+            <p>Content to be displayed here and paged</p>
+        </div>
+    </div>
+</div>
