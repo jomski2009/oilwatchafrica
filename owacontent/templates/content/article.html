@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load mezzanine_tags comment_tags keyword_tags rating_tags i18n disqus_tags %}
+<body>
+{% block content %}
+    {{ contentlist.content|richtext_filters|safe }}
+    <p>End of line</p>
+<p><img class="img-responsive" src="{{ MEDIA_URL }}{% thumbnail contentlist.featured_image 600 0 %}"></p>
+{% endblock %}
+
+</body>

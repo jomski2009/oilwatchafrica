@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if messages %}
+        <div class="messages row">
+            <section class="messages col col-lg-12">
+                <h3>{{ messages }}</h3>
+            </section>
+        </div>
+    {% endif %}
+    <div class="content row">
+        <section class="main col col-lg-9">
+            {% include "includes/carousel.html" %}
+            {% include "includes/lorem.html" %}
+        </section>
+        <section class="sidebar col col-lg-3">
+            {% include "includes/lorem.html" %}
+        </section>
+
+    </div>
+{% endblock %}
