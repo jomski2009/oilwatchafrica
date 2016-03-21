@@ -346,3 +346,9 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
+
+# Variables that contains the user credentials to access Twitter API
+TWITTER_ACCESS_TOKEN_KEY = '45419796-60jLL6n1NvZFc3LijAx4X0j539WR0QFbaMUH7WfeC'
+TWITTER_ACCESS_TOKEN_SECRET = 'VRQ0U2LrVvLKlyKHaNUUzB7zhUw6Smxpx5nkGa77oZQY6'
+TWITTER_CONSUMER_KEY = '4WM3pmKdrwRUC467DR2pgTo7d'
+TWITTER_CONSUMER_SECRET = 'AVfR9gNVfCEPOWF1Zwaf9kKxG83t3H2cWhHvbcjocBiQeHFxrd'

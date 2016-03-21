@@ -61,6 +61,18 @@ footer a {
     opacity: 0.5;
 }
 
+.carousel-caption p {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.carousel-caption p a{
+    color: #fff;
+}
+
 .carousel-indicators {
     bottom: 10px;
 }
@@ -73,9 +85,20 @@ footer a {
 
 .content-card-container {
     margin-bottom: 10px;
-    border-bottom: 1px solid #d1d1d1;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-bottom: 10px;
+
     clear: both;
+    background-color: #f4f4f4;
+    /*padding-left: 5px;*/
+    /*padding-right: 5px;*/
+    /*padding-top: 5px;*/
+}
+
+.content-card-container h4 {
+    padding-left: -5px;
 }
 
 .content-newsletter, .content-article, .content-pressrelease {
@@ -84,4 +107,22 @@ footer a {
 
 .read-more {
     text-align: right;
+}
+
+.content-grid-display {
+    padding-left: 0px;
+}
+
+.books {
+    width: 150px;
+}
+
+.book-item {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.widget h3{
+    margin-top:5px;
 }

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
 
 {% block content %}
     {% if messages %}
@@ -16,8 +17,11 @@
             {% include "content/content_home_listing.html" %}
         </section>
         <section class="sidebar col col-lg-4">
+            {% include "widgets/search_form.html" %}
+            {% ifinstalled mezzanine.twitter %}
+                {% include "widgets/twitter.html" %}
+            {% endifinstalled %}
             {% include "widgets/newsletters.html" %}
-            {% include "widgets/twitter.html" %}
         </section>
 
     </div>

@@ -5,7 +5,9 @@
             <p><img class="img-responsive featured-image" src="{{ MEDIA_URL }}{{ item.featured_image }}"></p>
         {% endif %}
         <p>{{ item.description }}</p>
-    <p class="read-more"><a href ="{% url "content_detail" item.slug %}">Read more</a> </p>
     </div>
-<div class="clearfix"></div>
+    <div>
+        <p class="read-more"><a href="{% url "content_detail" item.slug %}">Read more</a></p>
+    </div>
+    <div class="clearfix"></div>
 </div>

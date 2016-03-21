@@ -22,7 +22,7 @@
         <img class="carousel-image" src="{{ MEDIA_URL }}{{ item.featured_piece_slide_image }}"
              alt="Oil Spill 1">
         <div class="carousel-caption">
-            <p>{{ item.title }}</p>
+            <p><a href="{% url "content_detail" item.slug %}">{{ item.title }}</a></p>
         </div>
         </div>
         {% endfor %}
